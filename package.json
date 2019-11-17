@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-source-connpass",
+  "version": "1.0.0",
+  "description": "Source data from conpass API and transform it into Gatsby-nodes.",
+  "main": "index.js",
+  "repository": "https://github.com/dowdiness/gatsby-source-connpass",
+  "author": "koji Ishimoto <koji.programs@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin",
+    "connpass"
+  ],
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "generate-changelog": "^1.7.1",
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
