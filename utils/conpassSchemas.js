@@ -32,5 +32,5 @@ module.exports = {
       id: Int
       title: String
       url: String
-    `,
+    `
 }

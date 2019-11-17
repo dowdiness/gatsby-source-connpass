@@ -1,4 +1,4 @@
-const conpassSchemas = require("./conpassSchemas");
+const conpassSchemas = require('./conpassSchemas')
 
 const getTypeDef = (name, schema) => {
   return `
@@ -9,6 +9,7 @@ const getTypeDef = (name, schema) => {
 }
 
 module.exports = () => {
-  return Object.keys(conpassSchemas)
-    .map(key => getTypeDef(key, schemas[key]))
+  return Object.keys(conpassSchemas).map(key =>
+    getTypeDef(key, conpassSchemas[key])
+  )
 }

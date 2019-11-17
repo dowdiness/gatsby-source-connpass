@@ -1,4 +1,5 @@
-const getConpassUrl = require('../utils/getConpassUrl');
+/* eslint-disable no-undef */
+const getConpassUrl = require('../utils/getConpassUrl')
 
 // create a function into global context for Jest
 global.console = {
@@ -8,9 +9,9 @@ global.console = {
 }
 
 test('getConpassUrl with params series_id=7278&order=1&count=100', () => {
-  expect(getConpassUrl(
-      {series_id: 7278, order: 1, count: 100}
-    )).toBe('https://connpass.com/api/v1/event/?series_id=7278&order=1&count=100')
+  expect(getConpassUrl({ series_id: 7278, order: 1, count: 100 })).toBe(
+    'https://connpass.com/api/v1/event/?series_id=7278&order=1&count=100'
+  )
 })
 
 test('get console.error when getConpassUrl called without params', () => {
