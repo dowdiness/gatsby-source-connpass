@@ -13,7 +13,8 @@
     "connpass"
   ],
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.3.0",
+    "prettier": "1.19.1"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
@@ -21,9 +22,16 @@
     "@babel/preset-env": "7.1.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.6.0",
+    "eslint-config-prettier-standard": "^3.0.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "generate-changelog": "^1.7.1",
     "jest": "^24.9.0",
-    "prettier-standard": "^15.0.1"
+    "prettier-config-standard": "^1.0.1"
   },
   "scripts": {
     "test": "jest"
