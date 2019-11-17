@@ -1,10 +1,10 @@
 module.exports = (params) => {
   if (!params) {
-    console.log('Params-Error. You have to define params option.')
+    console.error('Params-Error. You have to define params option.')
     return
   }
   if (typeof params !== 'object') {
-    console.log('Params-Error. Params option is only for object.')
+    console.error('Params-Error. Params option is only for object.')
     return
   }
 
