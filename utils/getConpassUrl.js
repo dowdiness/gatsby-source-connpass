@@ -8,13 +8,14 @@ module.exports = (params) => {
     return
   }
 
-  const conpassParams = Object.entries(params).forEach(([key, value]) => {
-    `${key}=${value}`
-  }).reduce((query, currentQuery, currentIndex, array) => {
-    query + currentQuery + currentIndex !== array.length - 1 ? '&' : ''
+  const conpassParams = Object.entries(params).map(([key, value], index, paramsArray) => {
+    if (index === paramsArray.length -1 ) {
+      return`${key}=${value}`
+    }
+    return`${key}=${value}&`
+  }).reduce((query, currentQuery) => {
+    return query + currentQuery
   })
 
-  const conpassUrl = `https://connpass.com/api/v1/event/?${conpassParams}`
-  console.log(conpassUrl)
-  return conpassUrl
+  return `https://connpass.com/api/v1/event/?${conpassParams}`
 }
