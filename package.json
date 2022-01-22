@@ -13,7 +13,7 @@
     "connpass"
   ],
   "dependencies": {
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^3.1.1",
     "prettier": "1.19.1"
   },
   "devDependencies": {
